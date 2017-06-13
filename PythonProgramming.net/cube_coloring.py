@@ -73,7 +73,7 @@ def draw_cube():
         x = 0
         for vertex in surface:
             x += 1
-            # If you use range [0-255] use glColor3uiv instead
+
             glColor3fv(colors[x])
             glVertex3fv(vertices[vertex])
     glEnd()
