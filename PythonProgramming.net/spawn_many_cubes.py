@@ -148,7 +148,7 @@ def main():
                 pygame.quit()
                 quit()
 
-            # Only works when set_repeat was used
+            # Used instead of KEYUP function
             x_move = 0
             y_move = 0
 
@@ -164,7 +164,7 @@ def main():
                 if event.key == pygame.K_DOWN:
                     y_move = -0.3
 
-            # This part is actually unnecessary when set_repeat is used
+            # This part is actually unnecessary if x_move and y_move are always zeroed out
             """
             if event.type == pygame.KEYUP:
                 if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
