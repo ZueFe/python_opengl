@@ -102,14 +102,13 @@ def game_loop():
         if x > display_width - car_width or x < 0:
             # Display crash text
             crash()
-            # Restart game, moved from crash() method
-            game_loop()
 
+            # End Game
+            crashed = True
 
         # Render all objects
         pygame.display.update()
         clock.tick(60)
-
 
 game_loop()
 pygame.quit()
